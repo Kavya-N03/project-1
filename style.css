@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+}
+/* navbar */
+.navbar{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.logo{
+    display: flex;
+    margin-right: 20px;
+}
+ .fa-solid{
+    font-size:3vw;
+    color:orangered;
+    margin:30px 5px ;
+}
+.name{
+    margin-top: 20px;
+    font-size:2vw;
+    color:green;
+    cursor: pointer;
+}
+
+.name::first-letter{
+    font-size:3vw;
+}
+.nav-links{
+    list-style: none;
+    margin:40px;
+    display: flex;
+    justify-content: space-between;
+    gap:60px;
+}
+.nav-links a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+    color:blue;
+}
+
+/* home */
+#home{
+    height:auto;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.food-image img{
+    width:300px;
+    height:300px;
+    margin-top: 100px;
+    animation: animate 5s 0s infinite normal; 
+}
+ @keyframes animate{
+    from{
+       transform:rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg);
+    }
+} 
+.caption{
+    height:700px;
+    width:800px;
+}
+
+.caption h1{
+    color:darkmagenta;
+    font-size:2.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    margin-top:100px;
+}
+
+.caption h4{
+    color:blue;
+    font-size:1.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin: 30px 100px;
+} 
+
+.btn{
+    height:40px;
+    width:100px;
+    color:#ffffff;
+    font-size: 1vw;
+    font-weight:bold;
+    background-color:green;
+    margin-left:100px;
+    margin-top:40px;
+}
+.btn:active{
+    background-color:red;
+}
+
+/* about us */
+#aboutus{
+    height:auto;
+}
+
+#aboutus h1{
+    font-family: sans-serif;
+    font-size: 3vw;
+    color:black;
+    font-weight: bolder;
+    text-align:center;
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutimage img{
+    height:400px;
+    width:400px;
+    border-radius: 10px;
+    margin: 80px 80px;
+}
+
+.abt-caption h2{
+    color:darkmagenta;
+    font-size:2.8vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom:10%; 
+} 
+.abt-caption p{
+    color:blue;
+    font-size:1.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique; 
+    font-weight: bold;
+}
+.btn2{
+    height:40px;
+    width:100px;
+    color:white;
+    font-size: 17px;
+    font-weight:bold;
+    background-color:rgb(0, 128, 0);
+    margin-right:100px;
+    margin-top:40px;
+}
+.btn2:active{
+    background-color:rgb(255, 0, 0);
+}
+
+/* services */
+#services{
+    height:auto;
+}
+#services h1{
+    font-family: sans-serif;
+    font-size: 3vw;
+    color:black;
+    font-weight: bolder;
+    text-align:center;
+}
+
+.features{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    margin: 80px;
+}
+
+.feature{
+    height: 300px;
+    width:300px;
+}
+
+.feature img{
+    width:100px;
+    height:100px;
+    margin:30px 60px;
+}
+
+.feature p{
+    font-size: 1.2vw;
+    color:rgba(11, 11, 135,0.8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* menu */
+#menu{
+    height:auto;
+}
+
+#menu h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    color:black;
+    font-weight: bolder;
+    text-align:center;
+}
+.item img{
+    height:300px;
+    width:300px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.items img:active{
+    transform: scale(1.5);
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:30px 50px;
+    row-gap: 30px;
+    column-gap:1%;
+}
+
+.items h4{
+    font-size: 30px;
+    color:rgb(223, 4, 4);
+    font-weight: bold;
+}
+
+.bttn{
+    height:40px;
+    width:100px;
+    color:white;
+    font-size: 17px;
+    font-weight:bold;
+    background-color:rgb(0, 128, 0);
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.bttn:hover{
+    transform: scale(1.08);
+}
+
+/* contact us */
+#contactus h1{
+    font-size: 3vw;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.details h3{
+    font-size: 2.5vw;
+    font-family: system-ui;
+    text-align: center;
+}
+
+.form{
+    width:400px;
+    height: auto;
+    background-color: #7fffd4;
+}
+
+label{
+    font-size: 1.5vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input{
+    width:400px;
+    height:50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    font-size: 1.2vw;
+}
+#button{
+    width:180px;
+    height:50px;
+    border-radius:30px;
+    background-color:rgb(19, 19, 231);
+    color:white;
+    font-size: 1.8vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:50px 100px;
+}
+
+/* footer */
+footer{
+  background-color:rgb(76, 76, 155);
+  font-size: 1vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+ .fa-brands{
+  font-size: 2vw;
+  color:#000000;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 30px;
+    margin: 20px;
+  }
+  .caption h1 {
+    font-size: 4vw;
+  }
+  .caption h4 {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo h2,.fa-solid{
+    font-size: 5vw;
+  }
+  .logo h2::first-letter{
+    font-size: 6vw;
+  }
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .food-image img {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px auto;
+  }
+
+  .caption {
+    width:auto;
+    height: 400px;
+    margin: 1px auto;
+  }
+  .btn{
+    width:80px;
+    height:30px;
+    font-size: 10px;
+    margin:10px auto;
+  }
+
+  .aboutimage img{
+    width:200px;
+    height: 200px;
+    margin-right:10px;
+  }
+  .btn2{
+    width:80px;
+    height:30px;
+    font-size: 10px;
+  }
+  .features{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1px;
+    height: 800px;
+  }
+  .feature p{
+    font-size: 3vw;
+  }
+
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details h3,label,input{
+    font-size: 3vw;
+    width: 90%;
+  }
+  #button{
+    width:100px;
+    height: 40px;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links a {
+    font-size: 4vw;
+  }
+
+  .feature {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
